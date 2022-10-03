@@ -1,8 +1,13 @@
+import { MOCK_PROJECTS } from './MockProjects';
+import ProjectList from './ProjectList';
+
 const ProjectsPage = () => {
   return (
-    <blockquote cite="Benjamin Franklin">
-      Tell me and I forget, teach me and I may remember, involve me and I learn.
-    </blockquote>
+    <>
+      <h1>Projects</h1>
+      <ProjectList projects={MOCK_PROJECTS} />
+    </>
   );
 };
+
 export default ProjectsPage;
